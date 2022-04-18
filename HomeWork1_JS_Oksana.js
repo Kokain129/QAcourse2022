@@ -31,7 +31,7 @@ console.log("item_7 == " + item_7 + ", " + "item_7_type == " + item_7_type);
 
 // if else
 
-let age_1 = 100;
+let age_1 = 10;
 let age_2 = 18;
 let age_3 = 60;
 
@@ -50,13 +50,13 @@ else if (age_1 > age_3) {
 // * function
 
 const checkAge = function(age) {
-    if (age < 18) {
+    if (age < age_2) {
         console.log("You don’t have access cause your age is " + age + " and it’s less than required!")
     }
-    else if (age >= 18 && age <= 60 ) {
+    else if (age >= age_2 && age <= age_3) {
         console.log("Welcome!")
     }
-    else if (age > 60) {
+    else if (age > age_3) {
         console.log("Keep calm and watch Culture channel!")
     } else {
         console.log("Technical work")
@@ -73,13 +73,13 @@ const checkAge2 = function(age) {
     if (typeof(age) === 'string') {
         console.log('Error! Please, enter numbers only')
     }
-    else if (age < 18) {
+    else if (age < age_2) {
         console.log("You don’t have access cause your age is " + age + " and it’s less than required!")
     }
-    else if (age >= 18 && age <= 60 ) {
+    else if (age >= age_2 && age <= age_3) {
         console.log("Welcome!")
     }
-    else if (age > 60) {
+    else if (age > age_3) {
         console.log("Keep calm and watch Culture channel!")
     } else {
         console.log("Technical work")
@@ -88,5 +88,4 @@ const checkAge2 = function(age) {
 
     checkAge2('18i');
 
-    // ***
-
+    
