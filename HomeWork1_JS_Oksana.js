@@ -17,6 +17,8 @@ console.log(item_3 * item_4);
 
 let item_5 = item_3;
 
+// typeof 
+
 let item_6 = 15;
 
 let item_6_type = typeof(item_6);
@@ -27,14 +29,16 @@ let item_7_type = typeof(item_7);
 
 console.log("item_7 == " + item_7 + ", " + "item_7_type == " + item_7_type);
 
-let age_1 = 10;
+// if else
+
+let age_1 = 100;
 let age_2 = 18;
 let age_3 = 60;
 
 if (age_1 < age_2) {
-    console.log("You don’t have access cause your age is " + age_1 + " it’s less than required!")
+    console.log("You don’t have access cause your age is " + age_1 + " and it’s less than required!")
 }
-else if (age_1 >=  age_2 && age_1 < age_3) {
+else if (age_1 >=  age_2 && age_1 <= age_3) {
     console.log("Welcome!")
 }
 else if (age_1 > age_3) {
@@ -42,4 +46,47 @@ else if (age_1 > age_3) {
 } else {
     console.log("Technical work")
 };
+
+// * function
+
+const checkAge = function(age) {
+    if (age < 18) {
+        console.log("You don’t have access cause your age is " + age + " and it’s less than required!")
+    }
+    else if (age >= 18 && age <= 60 ) {
+        console.log("Welcome!")
+    }
+    else if (age > 60) {
+        console.log("Keep calm and watch Culture channel!")
+    } else {
+        console.log("Technical work")
+    }
+    };
+
+    checkAge(17);
+    checkAge(18);
+    checkAge(61);
+
+// ** 
+
+const checkAge2 = function(age) {
+    if (typeof(age) === 'string') {
+        console.log('Error! Please, enter numbers only')
+    }
+    else if (age < 18) {
+        console.log("You don’t have access cause your age is " + age + " and it’s less than required!")
+    }
+    else if (age >= 18 && age <= 60 ) {
+        console.log("Welcome!")
+    }
+    else if (age > 60) {
+        console.log("Keep calm and watch Culture channel!")
+    } else {
+        console.log("Technical work")
+    }
+    };
+
+    checkAge2('18i');
+
+    // ***
 
