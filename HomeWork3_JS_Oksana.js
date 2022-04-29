@@ -444,9 +444,10 @@ const clients = [
 }
 ]
 
+console.log(clients.length)
 
 let unique = Array.from(new Set(clients.map(client => JSON.stringify(client)))).map(client => JSON.parse(client));
-console.log(unique)
+console.log(unique.length, unique)
 
 // Task 2*** Реализуйте считывание JSONки из файла task2.json с помощью, например, модуля fs. для дальнейшего использования в функции, описанной в задании
 
@@ -455,16 +456,14 @@ const fs = require('fs');
 let rawdata = fs.readFileSync('./task2.json');
 let clientsArr = JSON.parse(rawdata);
 
-clientsArr.forEach((element, index) => {
-    console.log(index, element)
-})
+console.log(clientsArr.length, clientsArr)
 
-// Task 3**
-// В файле task3.txt найдете структуру компании и задания, необходимые выполнить.
+// clientsArr.forEach((element, index) => {
+//     console.log(index, element)
+// })
+
+// Task 3** - in file task3.txt найдете структуру компании и задания, необходимые выполнить.
 
 
-// Task 4****
-
-// Задание: написать функцию: 
-// Функция строит древовидный список компании.
+// Task 4**** написать функцию: строит древовидный список компании.
 // При ее вызове в консоль должен вывестись список подразделений компании с указанием количества сотрудников и с соблюдение вложенности подразделений.
