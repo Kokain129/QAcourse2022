@@ -73,7 +73,21 @@ printSmile(":D", 6)
 
 // Проверки: 'case', 'Case', 'Check-list'
 
+function getWordStructure(word) {
+    const vowels = 'aeiouy'.split('')
+    const consonants = 'qwrtpsdfghjklzxcvbnm'.split('')
+    let numberOfVowels = 0;
+    let numberOfConsonants = 0;
+    for(char of word.toLowerCase()) {
+        if (vowels.includes(char)) numberOfVowels++;
+        if (consonants.includes(char)) numberOfConsonants++;
+    }
+    console.log(`Слово ${word} состоит из ${numberOfVowels} гласных и ${numberOfConsonants} согласных букв`) 
+}
 
+getWordStructure('case')
+getWordStructure('Case')
+getWordStructure('Check-list')
 
 
 
@@ -81,3 +95,28 @@ printSmile(":D", 6)
 // e.g. function isPalindrom(word)
 
 // Проверки: 'abba', 'Abba'
+
+// check1
+
+function isPalindrom(word) {
+    let newString = '';
+    for (i = word.length - 1; i >=0; i--) {
+        newString = newString + word[i];
+     }
+    if (word.toLowerCase() == newString.toLowerCase()) {
+        console.log(word, ' - палиндром',);
+    } else {
+        console.log(word, ' - нe палиндром',);
+     }
+    }
+
+    isPalindrom('Abba')
+    isPalindrom('arma')
+
+    // check2
+
+    function isPalindrom2(word) {
+        return word.toLowerCase() == word.toLowerCase().split('').reverse().join('')
+    }
+        console.log(`${isPalindrom2('Abba') ? 'Its a palindrome' : 'Its not a palindrome'}`)
+    
