@@ -64,7 +64,7 @@ vim skills.json
 }
 
 
- 15. Отправить сразу 2 файла на внешний репозиторий: 	git add . && git commit -m "adding new files" => git push
+ 15. Отправить сразу 2 файла на внешний репозиторий: 	git add . | git commit -m "adding new files" | git push
 
 
  16. На веб интерфейсе создать файл bug_report.json: 	click the "Add file" > "Create New file" button 
