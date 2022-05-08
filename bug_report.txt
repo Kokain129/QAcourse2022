@@ -1,0 +1,10 @@
+Bug report structure:
+
+Title
+Summary
+STR
+AC
+EX
+Environment
+Comments
+
