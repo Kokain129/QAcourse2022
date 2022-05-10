@@ -24,11 +24,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{base_url}}/get_method?name=Andromeda&age=129",
+					"raw": "http://162.55.220.72:5005/get_method?name=Andromeda&age=129",
 					"protocol": "http",
 					"host": [
-						"{{base_url}}"
+						"162",
+						"55",
+						"220",
+						"72"
 					],
+					"port": "5005",
 					"path": [
 						"get_method"
 					],
@@ -85,11 +89,15 @@
 					]
 				},
 				"url": {
-					"raw": "http://{{base_url}}/user_info_3",
+					"raw": "http://162.55.220.72:5005/user_info_3",
 					"protocol": "http",
 					"host": [
-						"{{base_url}}"
+						"162",
+						"55",
+						"220",
+						"72"
 					],
+					"port": "5005",
 					"path": [
 						"user_info_3"
 					],
@@ -151,26 +159,30 @@
 					]
 				},
 				"url": {
-					"raw": "http://{{base_url}}/object_info_1?name={{name}}&age={{age}}&weight={{weight}}",
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Andromeda&age=30&weight=52",
 					"protocol": "http",
 					"host": [
-						"{{base_url}}"
+						"162",
+						"55",
+						"220",
+						"72"
 					],
+					"port": "5005",
 					"path": [
 						"object_info_1"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "Andromeda"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "30"
 						},
 						{
 							"key": "weight",
-							"value": "{{weight}}"
+							"value": "52"
 						}
 					]
 				}
@@ -219,26 +231,30 @@
 					]
 				},
 				"url": {
-					"raw": "http://{{base_url}}/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Andromeda&age=30&salary=10000",
 					"protocol": "http",
 					"host": [
-						"{{base_url}}"
+						"162",
+						"55",
+						"220",
+						"72"
 					],
+					"port": "5005",
 					"path": [
 						"object_info_2"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "Andromeda"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "30"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}"
+							"value": "10000"
 						}
 					]
 				}
@@ -287,24 +303,30 @@
 					]
 				},
 				"url": {
-					"raw": "http:///{{base_url}}/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Andromeda&age=30&salary=10000",
 					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
 					"path": [
-						"{{base_url}}",
 						"object_info_3"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "Andromeda"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "30"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}"
+							"value": "10000"
 						}
 					]
 				}
@@ -353,24 +375,30 @@
 					]
 				},
 				"url": {
-					"raw": "http:///{{base_url}}/object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Andromeda&age=30&salary=10000",
 					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
 					"path": [
-						"{{base_url}}",
 						"object_info_4"
 					],
 					"query": [
 						{
 							"key": "name",
-							"value": "{{name}}"
+							"value": "Andromeda"
 						},
 						{
 							"key": "age",
-							"value": "{{age}}"
+							"value": "30"
 						},
 						{
 							"key": "salary",
-							"value": "{{salary}}"
+							"value": "10000"
 						}
 					]
 				}
@@ -416,10 +444,16 @@
 					]
 				},
 				"url": {
-					"raw": "http:///{{base_url}}/user_info_2",
+					"raw": "http://162.55.220.72:5005/user_info_2",
 					"protocol": "http",
+					"host": [
+						"162",
+						"55",
+						"220",
+						"72"
+					],
+					"port": "5005",
 					"path": [
-						"{{base_url}}",
 						"user_info_2"
 					],
 					"query": [
@@ -437,12 +471,6 @@
 				}
 			},
 			"response": []
-		}
-	],
-	"variable": [
-		{
-			"key": "age",
-			"value": "30"
 		}
 	]
 }
