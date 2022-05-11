@@ -132,23 +132,7 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Andromeda",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "10000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
 					"raw": "http://{{base_url}}/object_info_1?name={{name}}&age={{age}}&weight={{weight}}",
@@ -200,23 +184,7 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Andromeda",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "10000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
 					"raw": "http://{{base_url}}/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
@@ -268,23 +236,7 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Andromeda",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "10000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
 					"raw": "http:///{{base_url}}/object_info_3?name={{name}}&age={{age}}&salary={{salary}}",
@@ -334,23 +286,7 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Andromeda",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "25",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "10000",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
 					"raw": "http:///{{base_url}}/object_info_4?name={{name}}&age={{age}}&salary={{salary}}",
@@ -416,23 +352,13 @@
 					]
 				},
 				"url": {
-					"raw": "http:///{{base_url}}/user_info_2",
+					"raw": "http://{{base_url}}/user_info_2",
 					"protocol": "http",
-					"path": [
-						"{{base_url}}",
-						"user_info_2"
+					"host": [
+						"{{base_url}}"
 					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Andromeda",
-							"disabled": true
-						},
-						{
-							"key": "age",
-							"value": "129",
-							"disabled": true
-						}
+					"path": [
+						"user_info_2"
 					]
 				}
 			},
