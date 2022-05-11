@@ -24,7 +24,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://{{base_url}}/get_method?name=Andromeda&age=129",
+					"raw": "http://{{base_url}}/get_method?name={{name}}&age={{age}}",
 					"protocol": "http",
 					"host": [
 						"{{base_url}}"
@@ -35,11 +35,11 @@
 					"query": [
 						{
 							"key": "name",
-							"value": "Andromeda"
+							"value": "{{name}}"
 						},
 						{
 							"key": "age",
-							"value": "129"
+							"value": "{{age}}"
 						}
 					]
 				}
@@ -69,17 +69,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Andromeda",
+							"value": "{{name}}",
 							"type": "text"
 						},
 						{
 							"key": "age",
-							"value": "25",
+							"value": "{{age}}",
 							"type": "text"
 						},
 						{
 							"key": "salary",
-							"value": "10000",
+							"value": "{{salary}}",
 							"type": "text"
 						}
 					]
@@ -400,17 +400,17 @@
 					"formdata": [
 						{
 							"key": "name",
-							"value": "Andromeda",
+							"value": "{{name}}",
 							"type": "text"
 						},
 						{
 							"key": "age",
-							"value": "30",
+							"value": "{{age}}",
 							"type": "text"
 						},
 						{
 							"key": "salary",
-							"value": "10000",
+							"value": "{{salary}}",
 							"type": "text"
 						}
 					]
