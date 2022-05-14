@@ -92,18 +92,6 @@
 					],
 					"path": [
 						"user_info_3"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Andromeda",
-							"disabled": true
-						},
-						{
-							"key": "age",
-							"value": "129",
-							"disabled": true
-						}
 					]
 				}
 			},
@@ -365,10 +353,24 @@
 			"response": []
 		}
 	],
-	"variable": [
+	"event": [
 		{
-			"key": "age",
-			"value": "30"
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
